@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+<body>
+    <div id="sidenav" class="mysidenav">
+        <i class="fa fa-times fa-2x closebtn_icon" onclick="closenav()"></i>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">More</a>
+    </div>
+    <div class="header">
+        <div class="menu">
+            <i class="fa fa-bars fa-2x" onclick="opennav()"></i>
+        </div>
+        <div class="quiz_head">
+<h1>Quiz</h1>
+</div>
+    </div>
+    
+    <div class="wrapper">
+    <div class="welcome_text">
+<form class="welcome_form" name="welcome_form" onsubmit="submitform(event)">
+    <input type="text" name="name" placeholder="Enter Name" required>
+    <button type="submit">Start Quiz</button>
+</form>
+</div>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
