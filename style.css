@@ -70,8 +70,17 @@ body {
     display:block;
     width:100%;
 }
-.welcome_text {
+.welcome_text, .categories {
+    padding-bottom:100px;
     width:370px;
+}
+select {
+    background-color:transparent;
+    border:none;
+    font-size:15px;
+}
+.categ {
+    padding-bottom: 20px;
 }
 .welcome_form input {
     background-color:transparent;
