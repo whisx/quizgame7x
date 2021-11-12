@@ -257,3 +257,22 @@ select {
     overflow-x: hidden;
     transition: 0.4s;
 }
+.startagain {
+    background-color:;
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+    padding:10px;
+    border-radius: 5px;
+    border: 1px solid tomato;
+    position: relative;
+    top:20px;
+    transition: 0.4s;
+}
+.startagain:hover {
+    color: #009b77;
+}
+.loop {
+    position: relative;
+    left:10px;
+}

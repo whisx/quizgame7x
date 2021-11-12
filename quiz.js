@@ -269,6 +269,10 @@ function next()
         point += 10;
         sessionStorage.setItem("points",point);
     }
+    else
+    {
+        sessionStorage.setItem("points",point);
+    }
 
     if(question_count == questions.length - 1 || question_count == 9)
     {

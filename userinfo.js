@@ -8,7 +8,7 @@ document.querySelector(".time").innerHTML=usertime;
 
 let highscore=sessionStorage.getItem("highscore");
 
-if(userpoint>=highscore)
+if(userpoint>=highscore || userpoint==100)
 {
     highscore=userpoint;
 }
@@ -16,4 +16,8 @@ if(userpoint>=highscore)
 function viewhighscore() {
     document.getElementById("view_highscore").innerHTML=highscore;
     document.getElementById("view_highscore").style.width="150px";
+}
+
+function startagain() {
+    location.href="start.html";
 }
