@@ -78,9 +78,12 @@ select {
     background-color:transparent;
     border:none;
     font-size:15px;
+    letter-spacing:1px;
+    padding:5px;
 }
 .categ {
     padding-bottom: 20px;
+    letter-spacing: 1px;
 }
 .welcome_form input {
     background-color:transparent;
@@ -185,4 +188,72 @@ select {
     color:#fff;
     text-align: center;
     margin:15px;
+}
+.contact_us {
+    padding-bottom: 40px;  
+}
+.contact_icons {
+    letter-spacing: 10px;
+}
+.contact_icons a {
+    text-decoration: none;
+    color:#fff;
+}
+.insta_icon:hover {
+    color:#fb3958;
+}
+.fb_icon:hover {
+    color:#458eff;
+}
+.whatsapp_icon:hover {
+    color:#6dc993;
+}
+.email_icon:hover {
+    color:#ffc838;
+}
+.insta_icon, .fb_icon, .whatsapp_icon, .email_icon {
+    font-size: 30px !important;
+}
+.about, .about_this {
+    display:block;
+    width:700px;
+}
+.about {
+    padding-bottom: 20px;
+}
+.about_this {
+    color:#fff;
+    letter-spacing:1px;
+}
+.highscore {
+    background-color: #fff;
+    color:#341f97;
+    padding:10px;
+    width:150px;
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    position: absolute;
+    top:100px;
+    right:100px;
+    transition: 0.4s;
+}
+.highscore:hover {
+    background-color: #009b77;
+    color:#fff;
+}
+.view_highscore {
+    background-color: transparent;
+    color:#fff;
+    padding: 10px;
+    width:0;
+    text-align: center;
+    border:1px solid #009b77;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    position: absolute;
+    top:150px;
+    right:100px;
+    overflow-x: hidden;
+    transition: 0.4s;
 }

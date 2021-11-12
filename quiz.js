@@ -16,6 +16,19 @@ function submitform(e)
     {
         sessionStorage.setItem("category",10);
     }
+    let previousscore = sessionStorage.getItem("points");
+    if(previousscore==null)
+    {
+    sessionStorage.setItem("highscore",0);
+    }
+    else
+    {
+        let highscore = sessionStorage.getItem("highscore");
+        if(previousscore>=highscore)
+        {
+        sessionStorage.setItem("highscore",previousscore);
+        }
+    }
     location.href="quiz.html";
 }
 
