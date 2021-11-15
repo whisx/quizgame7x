@@ -8,7 +8,7 @@ document.querySelector(".time").innerHTML=usertime;
 
 let highscore=sessionStorage.getItem("highscore");
 
-if(userpoint>=highscore || userpoint==100)
+if((userpoint>=highscore || userpoint==100) && highscore!=100)
 {
     highscore=userpoint;
 }

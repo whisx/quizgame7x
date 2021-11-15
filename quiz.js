@@ -24,7 +24,7 @@ function submitform(e)
     else
     {
         let highscore = sessionStorage.getItem("highscore");
-        if(previousscore>=highscore)
+        if((previousscore>=highscore || previousscore==100) && highscore!=100)
         {
         sessionStorage.setItem("highscore",previousscore);
         }
@@ -35,222 +35,222 @@ function submitform(e)
 let questions = [
     {
     id:1,
-    question:"Q1. What is the full form of RAM ?",
-    answer:"Random Access Memory",
+    question:"Q1. Which crop is sown on the largest area in India?",
+    answer:"Rice",
     option: [
-        "Random Access Memory",
-        "Randomly Access Memory",
-        "Run Accept Memory",
-        "None of these"
+        "Rice",
+        "Wheat",
+        "Sugarcane",
+        "Maize"
     ]
     },
     {
         id:2,
-        question:"Q2. What is the full form of CPU ?",
-        answer:"Central Processing Unit",
+        question:"Q2. Entomology is the science that studies",
+        answer:"Insects",
         option: [
-            "Central Processing Unit",
-            "Control Processing Unit",
-            "Central Process Unit",
-            "Control Processed unit"
+            "Behaviour of human beings",
+            "Insects",
+            "The origin and history of technical and scientific terms",
+            "The formation of rocks"
         ]
     },
     {
         id:3,
-        question:"Q3. Question 3",
-        answer:"Option 1",
+        question:"Q3. Grand Central Terminal, Park Avenue, New York is the world's",
+        answer:"largest railway station",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "highest railway station",
+            "longest railway station",
+            "largest railway station",
+            "None of the above"
         ]
     },
     {
         id:4,
-        question:"Q4. Question 4",
-        answer:"Option 1",
+        question:"Q4. Galileo was an astronomer who",
+        answer:"discovered four satellites of Jupiter",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4"
+            "developed the telescope",
+            "discovered four satellites of Jupiter",
+            "discovered that the movement of pendulum produces a regular time measurement",
+            "All the above"
         ]
     },
     {
         id:5,
-        question:"Q5. Question 5",
-        answer:"Option 1",
+        question:"Q5. Corey Anderson who has hit the fastest ODI century in 36 balls is from",
+        answer:"New Zealand",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Optiion 4"
+            "England",
+            "Australia",
+            "West Indies",
+            "New Zealand"
         ]
     },
     {
         id:6,
-        question:"Q6. Question 6",
-        answer:"Option 1",
+        question:"Q6. The world smallest country is",
+        answer:"Vatican City",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Canada",
+            "Russia",
+            "Maldives",
+            "Vatican City"
         ]
     },
     {
         id:7,
-        question:"Q7. Question 7",
-        answer:"Option 1",
+        question:"Q7. In which year of First World War Germany declared war on Russia and France?",
+        answer:"1914",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "1914",
+            "1915",
+            "1916",
+            "1917"
         ]
     },
     {
         id:8,
-        question:"Q8. Question 8",
-        answer:"Option 1",
+        question:"Q8. Which one of the following was the first fort constructed by the British in India?",
+        answer:"Fort St. George",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Fort William",
+            "Fort St. George",
+            "Fort St. David",
+            "Fort St. Angelo"
         ]
     },
     {
         id:9,
-        question:"Q9. Question 9",
-        answer:"Option 1",
+        question:"Q9. Novak Djokovic is a famous player associated with the game of",
+        answer:"Lawn Tennis",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Hockey",
+            "Football",
+            "Chess",
+            "Lawn Tennis"
         ]
     },
     {
         id:10,
-        question:"Q10. Question 10",
-        answer:"Option 1",
+        question:"Q10. What is the second largest country(in size) in the world?",
+        answer:"Canada",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Canada",
+            "USA",
+            "China",
+            "Russia"
         ]
     },
     {
         id:11,
-        question:"Q1. Question 11",
-        answer:"Option 1",
+        question:"Q1. India's first satellite Aryabhata was launched from",
+        answer:"Soviet Union",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Soviet Union",
+            "America",
+            "India",
+            "Israel"
         ]
     },
     {
         id:12,
-        question:"Q2. Question 12",
-        answer:"Option 1",
+        question:"Q2. Google and NASA have joined hands to identify which two new planets around distant stars?",
+        answer:"Kepler 80g, Kepler 90i",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Kepler 80g, Kepler 90i",
+            "Kepler 90g, Kepler 80i",
+            "Kepler 81g, Kepler 90i",
+            "Kepler 90i, Kepler 82g"
         ]
     },
     {
         id:13,
-        question:"Q3. Question 13",
-        answer:"Option 1",
+        question:"Q3. Ampere is a unit of measure?",
+        answer:"Current",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Current",
+            "Resistance",
+            "Power",
+            "Voltage"
         ]
     },
     {
         id:14,
-        question:"Q4. Question 14",
-        answer:"Option 1",
+        question:"Q4. Which country developed Julang-2 ballistic missile?",
+        answer:"China",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "UK",
+            "Nepal",
+            "China",
+            "Malaysia"
         ]
     },
     {
         id:15,
-        question:"Q5. Question 15",
-        answer:"Option 1",
+        question:"Q5. Which country successfully launched a Long March 3B rocket, carrying two Beidou-3MEO satellites: Beidou-30 and Beidou-31?",
+        answer:"China",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Japan",
+            "Canada",
+            "Sweden",
+            "China"
         ]
     },
     {
         id:16,
-        question:"Q6. Question 16",
-        answer:"Option 1",
+        question:"Q6. Pedology is the science related to the study of",
+        answer:"Soil",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Atmosphere",
+            "Soil",
+            "Pollutants",
+            "Seeds"
         ]
     },
     {
         id:17,
-        question:"Q7. Question 17",
-        answer:"Option 1",
+        question:"Q7. Rate of change of distance is called as",
+        answer:"Speed",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "Speed",
+            "Velocity",
+            "Volume",
+            "Density"
         ]
     },
     {
         id:18,
-        question:"Q8. Question 18",
-        answer:"Option 1",
+        question:"Q8. The first Indian Satellite Aryabhatta was launched in",
+        answer:"1975",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "1974",
+            "1975",
+            "1976",
+            "1977"
         ]
     },
     {
         id:19,
-        question:"Q9. Question 19",
-        answer:"Option 1",
+        question:"Q9. The first high-level programming was",
+        answer:"FORTRAN",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "COBOL",
+            "FORTRAN",
+            "LISP",
+            "Pascal"
         ]
     },
     {
         id:20,
-        question:"Q10. Question 20",
-        answer:"Option 1",
+        question:"Q10. ISRO was formed in",
+        answer:"1963",
         option: [
-            "Option 1",
-            "Option 2",
-            "Option 3",
-            "Option 4",
+            "1963",
+            "1969",
+            "1972",
+            "1985"
         ]
     }
 ];
