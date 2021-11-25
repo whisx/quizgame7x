@@ -29,6 +29,8 @@ function submitform(e)
         sessionStorage.setItem("highscore",previousscore);
         }
     }
+    let timed_quiz = document.forms["welcome_form"]["timedquiz"].value;
+    sessionStorage.setItem("timedquiz",timed_quiz);
     location.href="quiz.html";
 }
 
@@ -258,9 +260,11 @@ let questions = [
 let category_count=sessionStorage.getItem("category");
 let question_count=category_count;
 let point=0;
+let nextbtn_count=0;
 
 function next()
 {
+    nextbtn_count=1;
 
     let user_answer=document.querySelector("li.option.active").innerHTML;
 
